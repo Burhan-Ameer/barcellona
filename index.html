@@ -1,53 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Car website</title>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-</head>
-<body>
-  <div class="flex flex-col min-h-screen bg-gradient-to-bl from-green-500 to-white">
-    <div class="flex justify-between items-center h-16 px-4 bg-red-300">
-      <div class="flex items-center w-1/2">
-        <div class="flex">
-          <div class="mx-2 w-11 h-11 bg-green-400 p-3 flex justify-center items-center text-white rounded-full">
-            <span class="material-symbols-outlined">directions_car</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Website</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Playwrite+BE+VLG:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="flex bg-gradient-to-bl from-green-950 to-white min-h-screen">
+    <!-- Global Container -->
+    <div class="w-full flex flex-col xs:m-5 md:m-10">
+      <!-- Nav Container -->
+      <div
+        class="sm:h-16 xs:h-48 flex xs:flex-col sm:flex-row xs:items-center xs:space-y-12 lg:justify-between xs:m-6 sm:mx-14 md:m-2 mt-12 item-center"
+      >
+        <!-- Logo -->
+        <div class="flex justify-between xs:w-full sm:w-1/2">
+          <div class="flex">
+            <div
+              class="xs:hidden mx-2 w-11 h-11 bg-green-400 p-3 flex justify-center items-center text-white rounded-full"
+            >
+              <span class="material-symbols-outlined">directions_car</span>
+            </div>
+            <div>
+              <p class="text-white text-2xl font-medium font-[fantasy]">
+                BORCELLE
+              </p>
+              <p class="text-white text-sm font-[sage] font-extralight">
+                AUTOMOTIVE
+              </p>
+            </div>
           </div>
-          <div>
-            <p class="text-white text-2xl font-medium font-[fantasy]">BORCELLE</p>
-            <p class="text-white text-sm font-[sage] font-extralight">AUTOMOTIVE</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex space-x-4 text-lg font-serif text-white xs:hidden sm:flex">
-        <div class="group">
-          Home
-          <div class="mx-2 pt-1 border-b-2 duration-500 opacity-0 group-hover:opacity-100"></div>
-        </div>
-        <div class="group">
-          Garage
-          <div class="mx-2 pt-1 border-b-2 duration-500 opacity-0 group-hover:opacity-100"></div>
-        </div>
-        <div class="group">
-          Contact
-          <div class="mx-2 pt-1 border-b-2 duration-500 opacity-0 group-hover:opacity-100"></div>
-        </div>
-      </div>
-      <div class="flex items-center xs:hidden sm:flex">
-        <div class="w-5/6 flex rounded-3xl p-1 bg-white">
-          <div class="text-white w-9 h-9 bg-green-400 p-3 flex justify-center items-center rounded-full">
-            <span class="material-symbols-outlined">search</span>
-          </div>
-          <input type="text" placeholder="What are you looking for?" id="" class="w-full outline-none rounded-3xl p-2 text-black">
-        </div>
-        <div class="w-9 h-9 m-2 bg-green-400 flex items-center justify-center text-white rounded-full">
-          <span class="material-symbols-outlined">account_circle</span>
-        </div>
-      </div>
-    </div>
 
+          <!-- Nav Items -->
+          <div
+            class="xs:block sm:hidden md:hidden text-white text-xs w-11 h-11 p-3 ml-3 bg-green-400 flex justify-center items-center rounded-full"
+          >
+            <span class="material-symbols-outlined">menu</span>
+          </div>
+
+          <div
+            class="flex md:w-9/12 justify-evenly text-lg font-serif text-white xs:hidden sm:hidden md:flex lg:flex"
+          >
+            <div class="group">
+              Home
+              <div
+                class="mx-2 pt-1 border-b-2 duration-500 opacity-0 group-hover:opacity-100"
+              ></div>
+            </div>
+            <div class="group">
+              Garage
+              <div
+                class="mx-2 pt-1 border-b-2 duration-500 opacity-0 group-hover:opacity-100"
+              ></div>
+            </div>
+            <div class="group">
+              Contact
+              <div
+                class="mx-2 pt-1 border-b-2 duration-500 opacity-0 group-hover:opacity-100"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Search Box -->
+        <div
+          class="xs:w-full sm:w-1/2 md:w-1/2 md:flex md:justify-end text-white"
+        >
+          <div class="flex items-center">
+            <!-- Search Icon -->
+            <div class="xs:w-full flex rounded-3xl p-1 bg-white">
+              <div
+                class="text-white w-9 h-9 bg-green-400 p-3 flex justify-center items-center rounded-full"
+              >
+                <span class="material-symbols-outlined">search</span>
+              </div>
+              <!-- Input -->
+              <input
+                type="text"
+                placeholder="What are you looking for?"
+                class="w-full outline-none rounded-3xl p-2 text-black"
+              />
+            </div>
+            <!-- Account Logo -->
+            <div
+              class="w-10 h-10 m-2 bg-green-400 flex items-center justify-center text-white rounded-full"
+            >
+              <span class="material-symbols-outlined">account_circle</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Container -->
+      <div class="xs:m-6 sm:mx-14 mt-12 flex flex-col">
+        <div class="flex xs:flex-col sm:flex-col md:flex-row">
+          <!-- Information tag -->
+          <div class="flex flex-col xs:w-full md:w-1/2 space-y-10">
+            <h1 class="font-edu text-3xl font-bold text-white">
+              2025 Mustang® GT Fastback
+            </h1>
+            <p class="flex font-edu text-white">
+              Ford Mustang is available in 1 engine option(s) i.e. Petrol. The
+              Ford Mustang is capable of generating a horsepower of 315 - 395 HP
+              and a torque of 475 - 515 Nm with a top speed of 233 - 240 KM/H.
+              Ford Mustang is available in 2 transmission option(s) i.e Manual &
+              Automatic. The Mustang car has a fuel average of 6 - 9 KM/L with a
+              fuel tank capacity of 61 - 68L. With the dimensions of 4810 mm in
+              length, 1915 mm in width, and 1397 mm in height ,the Mustang has a
+              seating capacity of 4 persons.
+            </p>
+            <button
+              class="bg-green-400 xs:w-full md:w-28 rounded-3xl font-edu duration-100 hover:bg-green-500 text-white p-3"
+            >
+              Add to cart
+            </button>
+          </div>
+          <div class="xs:w-full md:w-1/2 flex">
+            <img
+              src="./images/—Pngtree—old mustang car png_8440365.png"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <!-- specification -->
+        <div class="flex gap-4 xs:flex-col sm:flex-col md:flex-row">
+          <!-- card1 -->
+          <div
+            class="xs:w-full sm:w-full  md:w-72 h-32 rounded-2xl bg-green-900 flex items-center text-white"
+          >
+            <div
+              class="w-2/6 h-2/6 text-white text-2xl flex justify-center items-center"
+            >
+              <span class="material-symbols-outlined">
+                speed
+              </span>
+            </div>
+            <div class="flex flex-col">
+              <p class="text-xs text-green-400">Top speed</p>
+
+              <div class="flex items-center">
+                <h1 class="text-white text-5xl">+250</h1>
+                <p class="text-sm text-green-400">KPH</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div
+            class="xs:w-full sm:w-full  md:w-72 h-32 rounded-2xl bg-green-900 flex items-center text-white"
+          >
+            <div
+              class="w-2/6 h-2/6 text-white text-2xl flex justify-center items-center"
+            >
+              <span class="material-symbols-outlined">
+                speed
+              </span>
+            </div>
+            <div class="flex flex-col">
+              <p class="text-xs text-green-400">Engine</p>
+
+              <div class="flex items-center">
+                <h1 class="text-white text-5xl">5.01L</h1>
+                <p class="text-sm text-green-400">v12</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="xs:w-full sm:w-full  md:w-72 h-32 rounded-2xl bg-green-900 flex items-center text-white"
+          >
+            <div
+              class="w-2/6 h-2/6 text-white text-2xl flex justify-center items-center"
+            >
+              <span class="material-symbols-outlined">
+                speed
+              </span>
+            </div>
+            <div class="flex flex-col">
+              <p class="text-xs text-green-400">Transmission</p>
+
+              <div class="flex items-center flex-col">
+                <h1 class="text-white text-5xl">5 SPEED</h1>
+                <p class="text-sm text-green-400">Manual</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
